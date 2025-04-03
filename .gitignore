@@ -1,0 +1,53 @@
+# 👉 Fișiere/Folder ignorate pentru proiect Python (MacOS, VS Code, PyCharm)
+
+# === Fișiere de sistem MacOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# === Fișiere de sistem Linux ===
+*~
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+*.pyc
+
+# === Medii virtuale ===
+.venv/
+env/
+venv/
+ENV/
+*.env
+
+# === Jupyter Notebooks temporar ===
+.ipynb_checkpoints
+
+# === Configurări editori ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Fișiere de log sau temporare ===
+*.log
+*.tmp
+*.bak
+
+# === Alte fișiere inutile ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Tokenuri sau fișiere sensibile (dacă sunt) ===
+*.secret
+*.token
+token.txt

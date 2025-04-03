@@ -54,7 +54,7 @@ Acest proiect are ca scop dezvoltarea unei aplicații inteligente pentru agricul
 
 4. Rulează aplicația:
    ```bash
-   python app.py
+    streamlit run app.py
    ```
 
 ---
