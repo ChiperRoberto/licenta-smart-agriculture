@@ -2,10 +2,8 @@ import streamlit as st
 import torch
 from torchvision import transforms
 from PIL import Image
-import os
-import numpy as np
 
-from models.cnn_model import CNNModel  # importăm modelul tău deja antrenat
+from app.models.cnn_model import CNNModel  # importăm modelul tău deja antrenat
 
 # === Config ===
 MODEL_PATH = 'models/best_model.pth'
