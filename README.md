@@ -97,8 +97,6 @@ Proiectul „Smart Agriculture” își propune să integreze metode de intelige
 ### Detecția bolilor la plante-2
 ![Detecție boli](documentatie/imagini/imagine4.png)
 
-### Detecția bolilor la plante-2
-![Detecție boli](documentatie/imagini/imagine4.png)
 
 ## 💡 Notă
 
