@@ -84,6 +84,22 @@ Proiectul „Smart Agriculture” își propune să integreze metode de intelige
 
 ---
 
+## 🖼️ Screenshot-uri aplicație
+
+### Pagina principală-1
+![Pagina principala](documentatie/imagini/imagine1.png)
+### Pagina principală-2
+![Pagina principala](documentatie/imagini/imagine2.png)
+
+### Detecția bolilor la plante-1
+![Detecție boli](documentatie/imagini/imagine3.png)
+
+### Detecția bolilor la plante-2
+![Detecție boli](documentatie/imagini/imagine4.png)
+
+### Detecția bolilor la plante-2
+![Detecție boli](documentatie/imagini/imagine4.png)
+
 ## 💡 Notă
 
 Acesta este un proiect de licență în desfășurare. Structura se poate modifica pe măsură ce se adaugă funcționalități noi.
