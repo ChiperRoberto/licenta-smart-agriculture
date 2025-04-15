@@ -88,6 +88,7 @@ elif option == "Detectare boli din frunze (Iterația 2)":
             st.success(f"🩺 Boala detectată: **{prediction}**")
 
 # === Iterația 3 ===
+# === Iterația 3 ===
 elif option == "Estimare producție cultură (Iterația 3)":
     st.subheader("Introdu caracteristicile parcelei")
 
@@ -96,7 +97,18 @@ elif option == "Estimare producție cultură (Iterația 3)":
     feature_columns = reference_data.drop(columns=["Yield of CT", "Yield of NT"]).columns
 
     user_input = {}
-    for feature in feature_columns:
+
+    # Identificăm toate coloanele Crop_*
+    crop_columns = [col for col in feature_columns if col.startswith("Crop_")]
+    other_features = [col for col in feature_columns if col not in crop_columns]
+
+    # Dropdown pentru alegerea culturii
+    selected_crop = st.selectbox("Selectează cultura:", [col.replace("Crop_", "") for col in crop_columns])
+    for crop_col in crop_columns:
+        user_input[crop_col] = 1 if crop_col == f"Crop_{selected_crop}" else 0
+
+    # Input pentru celelalte caracteristici
+    for feature in other_features:
         if reference_data[feature].dtype in [np.float64, np.int64]:
             value = st.number_input(f"{feature}", value=float(reference_data[feature].mean()))
         else:
@@ -109,6 +121,9 @@ elif option == "Estimare producție cultură (Iterația 3)":
         try:
             model_ct = joblib.load("models/best_model_Yield_of_CT_XGBoost.pkl")
             model_nt = joblib.load("models/best_model_Yield_of_NT_XGBoost.pkl")
+
+            # Reordonăm inputul pentru a se potrivi exact cu modelul
+            input_df = input_df.reindex(columns=model_ct.feature_names_in_, fill_value=0)
 
             yield_ct = model_ct.predict(input_df)[0]
             yield_nt = model_nt.predict(input_df)[0]
