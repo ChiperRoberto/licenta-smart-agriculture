@@ -104,5 +104,5 @@ Acesta este un proiect de licență în desfășurare. Structura se poate modifi
 
 ---
 
-[![Tests](https://github.com/<utilizator>/<repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<utilizator>/<repo>/actions)
-[![Coverage](https://codecov.io/gh/<utilizator>/<repo>/branch/main/graph/badge.svg)](https://codecov.io/gh/<utilizator>/<repo>)
+[![Tests](https://github.com/ChiperRoberto/licenta-smart-agriculture/actions/workflows/ci.yml/badge.svg)](https://github.com/<utilizator>/<repo>/actions)
+[![Coverage](https://codecov.io/gh/ChiperRoberto/licenta-smart-agriculture/branch/main/graph/badge.svg)](https://codecov.io/gh/<utilizator>/<repo>)
