@@ -103,3 +103,6 @@ Proiectul „Smart Agriculture” își propune să integreze metode de intelige
 Acesta este un proiect de licență în desfășurare. Structura se poate modifica pe măsură ce se adaugă funcționalități noi.
 
 ---
+
+[![Tests](https://github.com/<utilizator>/<repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<utilizator>/<repo>/actions)
+[![Coverage](https://codecov.io/gh/<utilizator>/<repo>/branch/main/graph/badge.svg)](https://codecov.io/gh/<utilizator>/<repo>)

@@ -1,4 +1,5 @@
 streamlit
+streamlit-option-menu>=0.3.2
 pandas
 numpy
 scikit-learn
@@ -9,3 +10,18 @@ Pillow
 torch
 torchvision
 joblib
+
+scikit-learn==1.3.2
+joblib==1.2.0
+streamlit>=1.34
+
+numpy
+pandas
+scikit-learn
+torch
+torchvision
+pillow
+joblib
+streamlit
+pytest
+pytest-cov
